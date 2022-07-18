@@ -1,129 +1,254 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../dist/output.css" rel="stylesheet">
-  <title>Blog Landing Page</title>
-</head>
-<body class="font-body">
-  <div class="container px-4 mx-auto max-w-5xl">
-    <div class="text-center py-14">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>Blog Landing Page</title>
+  </head>
+  <body class="font-body">
+    <div class="container px-4 mx-auto max-w-5xl">
+      <div class="text-center py-14">
         <h1 class="text-5x font-bold font-title text-sec">
-            Latest Blog <br>
-            <span class="text-pri">
-                Post
-            </span>
+          Latest Blog <br />
+          <span class="text-pri"> Post </span>
         </h1>
-        <p class="text-pri max-w-xs mx-auto py-6">Welcome to our blog site. Get our latest news with just one search!</p>
-        <input type="search" name="" id="" class="bg-our-bg px-8 py-2 rounded-3xl shadow-inner ring-sec focus:outline-none focus:ring-1" placeholder="Search...">
+        <p class="text-pri max-w-xs mx-auto py-6">
+          Welcome to our blog site. Get our latest news with just one search!
+        </p>
+        <input
+          type="search"
+          name=""
+          id=""
+          class="bg-our-bg px-8 py-2 rounded-3xl shadow-inner ring-sec focus:outline-none focus:ring-1"
+          placeholder="Search..."
+        />
+      </div>
+      <section class="main">
+        <div class="grid grid-cols-3 gap-y-16 gap-x-12">
+          <!-- first row -->
+          <div class="col-span-3">
+            <a
+              class="border border-gray-100 flex rounded-3xl overflow-hidden transition duration-300 hover:shadow-lg"
+            >
+              <div class="w-1/2">
+                <img
+                  src="https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b2ZmaWNlJTIwZGVza3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                  alt="office desk"
+                />
+              </div>
+              <div class="w-1/2 p-7">
+                <p class="px-3 py-1 bg-our-bg rounded text-sec text-xs inline">
+                  Featured
+                </p>
+                <h2
+                  class="font-bold text-pri text-2xl font-title py-3 transition duration-200 hover:text-sec"
+                >
+                  Why is it important to follow a Brand Style Guide for your
+                  business?
+                </h2>
+                <p class="text-gen pb-5">
+                  A brand style guide is also known as a brand guide or brand
+                  book. For many companies, the guide is essential to maintain
+                  their brand identity. For them, such a well-thought-of guide
+                  becomes their key document, which serves as a guide to create
+                  a variety of content for brand marketing.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="face"
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xsx-text-pri font-bold">Jane Doe</h6>
+                    <p class="text-xs text-gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- second row -->
+          <div class="blog-card">
+            <a href="">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="mountains"
+              />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-gen pb-5">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Tempora id distinctio dolores quae ullam odit, maxime
+                  explicabo perspiciatis corporis provident.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="face"
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xsx-text-pri font-bold">Jane Doe</h6>
+                    <p class="text-xs text-gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="">
+              <img
+                src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="mountains"
+              />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-gen pb-5">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Tempora id distinctio dolores quae ullam odit, maxime
+                  explicabo perspiciatis corporis provident.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="face"
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xsx-text-pri font-bold">Jane Doe</h6>
+                    <p class="text-xs text-gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="">
+              <img
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="mountains"
+              />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-gen pb-5">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Tempora id distinctio dolores quae ullam odit, maxime
+                  explicabo perspiciatis corporis provident.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="face"
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xsx-text-pri font-bold">Jane Doe</h6>
+                    <p class="text-xs text-gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- third row -->
+          <div class="blog-card col-span-2">
+            <a href="">
+              <img
+                src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVza3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="desk with notebook and keyboard"
+                class="h-72 w-full"
+              />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-gen pb-5">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Tempora id distinctio dolores quae ullam odit, maxime
+                  explicabo perspiciatis corporis provident.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="face"
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xsx-text-pri font-bold">Jane Doe</h6>
+                    <p class="text-xs text-gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog-card">
+            <a href="">
+              <img
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="mountains at night"
+              />
+              <div class="px-4 pb-6">
+                <h2 class="post-title">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </h2>
+                <p class="text-gen pb-5">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Tempora id distinctio dolores quae ullam odit, maxime
+                  explicabo perspiciatis corporis provident.
+                </p>
+                <div class="flex items-center">
+                  <img
+                    src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="face"
+                    class="w-9 h-9 rounded-full"
+                  />
+                  <div class="pl-3">
+                    <h6 class="text-xsx-text-pri font-bold">Jane Doe</h6>
+                    <p class="text-xs text-gen">Brand Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Subscription and Footer -->
+      <section class="subscribe">
+        <div class="text-center mx-auto py-32">
+          <h6 class="text-5x font-bold font-title text-pri">
+            Subscribe to Our <br />
+            <span class="text-sec"> Blog </span>
+          </h6>
+          <p class="max-w-xs mx-auto text-pri py-6">
+            Please subscribe to get regular updates and featured news through
+            your email!
+          </p>
+          <input
+            type="email"
+            name=""
+            id=""
+            class="px-8 py-2 bg-our-bg rounded-3xl shadow-inner focus:outline-none"
+            placeholder="Email Address.."
+          />
+          <input
+            type="submit"
+            value="Submit"
+            class="-ml-12 px-8 py-2 rounded-3xl bg-sec text-white hover:bg-blue-800 focus:outline-none focus:ring-1"
+          />
+        </div>
+      </section>
     </div>
-<section class="main">
-    <div class="grid grid-cols-3 gap-y-16 gap-x-12">
-        <!-- first row -->
-        <div class="col-span-3">
-            <a class="border border-gray-100 flex rounded-3xl overflow-hidden transition duration-300 hover:shadow-lg">
-                <div class="w-1/2">
-                    <img src="https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b2ZmaWNlJTIwZGVza3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="office desk">
-                </div> 
-                <div class="w-1/2 p-7">
-                    <p class="px-3 py-1 bg-our-bg rounded text-sec text-xs inline">Featured</p>
-                    <h2 class="font-bold text-pri text-2xl font-title py-3 transition duration-200 hover:text-sec">Why is it important to follow a Brand Style Guide for your business?</h2>
-                    <p class="text-gen pb-5">A brand style guide is also known as a brand guide or brand book. For many companies, the guide is essential to maintain their brand identity. For them, such a well-thought-of guide becomes their key document, which serves as a guide to create a variety of content for brand marketing.</p>
-                    <div class="flex items-center">
-                        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="face" class="w-9 h-9 rounded-full">
-                        <div class="pl-3">
-                            <h6 class="text-xsx-text-pri font-bold">Jane Doe</h6>
-                            <p class="text-xs text-gen">Brand Specialist</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
+    <footer class="bg-pri">
+        <div class="flex text-white font-bold py-8 font-title font extrabold justify-between max-w-5xl mx-auto tracking-wider">
+            <p>TailwindCSS</p>
+            <p>All Rights Reserved &copy; 2022</p>
         </div>
-        <!-- second row -->
-        <div class="blog-card">
-            <a href="">
-                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="mountains">
-                <div class="px-4 pb-6">
-                    <h2 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                    <p class="text-gen pb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id distinctio dolores quae ullam odit, maxime explicabo perspiciatis corporis provident.</p>
-                    <div class="flex items-center">
-                        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="face" class="w-9 h-9 rounded-full">
-                        <div class="pl-3">
-                            <h6 class="text-xsx-text-pri font-bold">Jane Doe</h6>
-                            <p class="text-xs text-gen">Brand Specialist</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="blog-card">
-            <a href="">
-                <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="mountains">
-                <div class="px-4 pb-6">
-                    <h2 class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                    <p class="text-gen pb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id distinctio dolores quae ullam odit, maxime explicabo perspiciatis corporis provident.</p>
-                    <div class="flex items-center">
-                        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="face" class="w-9 h-9 rounded-full">
-                        <div class="pl-3">
-                            <h6 class="text-xsx-text-pri font-bold">Jane Doe</h6>
-                            <p class="text-xs text-gen">Brand Specialist</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="blog-card">
-            <a href="">
-                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="mountains">
-                <div class="px-4 pb-6">
-                    <h2 class="post-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-                    <p class="text-gen pb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id distinctio dolores quae ullam odit, maxime explicabo perspiciatis corporis provident.</p>
-                    <div class="flex items-center">
-                        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="face" class="w-9 h-9 rounded-full">
-                        <div class="pl-3">
-                            <h6 class="text-xsx-text-pri font-bold">Jane Doe</h6>
-                            <p class="text-xs text-gen">Brand Specialist</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <!-- third row -->
-        <div class="blog-card col-span-2">
-            <a href="">
-                <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVza3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="desk with notebook and keyboard" class="h-72 w-full">
-                <div class="px-4 pb-6">
-                    <h2 class="post-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-                    <p class="text-gen pb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id distinctio dolores quae ullam odit, maxime explicabo perspiciatis corporis provident.</p>
-                    <div class="flex items-center">
-                        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="face" class="w-9 h-9 rounded-full">
-                        <div class="pl-3">
-                            <h6 class="text-xsx-text-pri font-bold">Jane Doe</h6>
-                            <p class="text-xs text-gen">Brand Specialist</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="blog-card">
-            <a href="">
-                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="mountains at night">
-                <div class="px-4 pb-6">
-                    <h2 class="post-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-                    <p class="text-gen pb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora id distinctio dolores quae ullam odit, maxime explicabo perspiciatis corporis provident.</p>
-                    <div class="flex items-center">
-                        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="face" class="w-9 h-9 rounded-full">
-                        <div class="pl-3">
-                            <h6 class="text-xsx-text-pri font-bold">Jane Doe</h6>
-                            <p class="text-xs text-gen">Brand Specialist</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-</section>
-  </div>
-</body>
+    </footer>
+  </body>
 </html>
