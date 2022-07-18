@@ -1,0 +1,23 @@
+{
+  "name": "blog-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caseofbase18/blog-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caseofbase18/blog-landing/issues"
+  },
+  "homepage": "https://github.com/caseofbase18/blog-landing#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}
