@@ -602,6 +602,10 @@ video {
   grid-column: span 3 / span 3;
 }
 
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -623,12 +627,20 @@ video {
   height: 2.25rem;
 }
 
+.h-72{
+  height: 18rem;
+}
+
 .w-1\/2{
   width: 50%;
 }
 
 .w-9{
   width: 2.25rem;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-5xl{
