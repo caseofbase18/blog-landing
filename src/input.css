@@ -7,3 +7,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.blog-card {
+    @apply border border-gray-100 rounded-xl overflow-hidden transition duration-200 hover:shadow-lg hover:border-transparent;
+}
+
+.post-title {
+    @apply font-bold text-pri text-xl font-title py-3 transition duration-200 hover:text-sec;
+}
