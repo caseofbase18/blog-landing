@@ -6,7 +6,7 @@
   <link href="../dist/output.css" rel="stylesheet">
   <title>Blog Landing Page</title>
 </head>
-<body>
+<body class="font-body">
   <div class="container px-4 mx-auto max-w-5xl">
     <div class="text-center py-14">
         <h1 class="text-5x font-bold font-title text-sec">
@@ -15,9 +15,32 @@
                 Post
             </span>
         </h1>
-        <p class="text-pri max-w-xs mx-auto py-6 ">Welcome to our blog site. Get our latest news with just one search!</p>
+        <p class="text-pri max-w-xs mx-auto py-6">Welcome to our blog site. Get our latest news with just one search!</p>
         <input type="search" name="" id="" class="bg-our-bg px-8 py-2 rounded-3xl shadow-inner ring-sec focus:outline-none focus:ring-1" placeholder="Search...">
     </div>
+<section class="main">
+    <div class="grid grid-cols-3">
+        <div class="col-span-3">
+            <a class="border border-gray-100 flex rounded-3xl overflow-hidden transition duration-500 hover:shadow-xl">
+                <div class="w-1/2">
+                    <img src="https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b2ZmaWNlJTIwZGVza3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="office desk">
+                </div> 
+                <div class="w-1/2 p-7">
+                    <p class="px-3 py-1 bg-our-bg rounded text-sec text-xs inline">Featured</p>
+                    <h2 class="font-bold text-pri text-2xl font-title py-3 transition duration-200 hover:text-sec">Why is it important to follow a Brand Style Guide for your business?</h2>
+                    <p class="text-gen pb-5">A brand style guide is also known as a brand guide or brand book. For many companies, the guide is essential to maintain their brand identity. For them, such a well-thought-of guide becomes their key document, which serves as a guide to create a variety of content for brand marketing.</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="face" class="w-9 h-9 rounded-full">
+                        <div class="pl-3">
+                            <h6 class="text-xsx-text-pri font-bold">Jane Doe</h6>
+                            <p class="text-xs text-gen">Brand Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
   </div>
 </body>
 </html>
