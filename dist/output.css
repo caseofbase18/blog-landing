@@ -606,13 +606,42 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.col-span-1{
+  grid-column: span 1 / span 1;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .-ml-12{
   margin-left: -3rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
+.mr-4{
+  margin-right: 1rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
+.block{
+  display: block;
+}
+
+.inline-block{
+  display: inline-block;
 }
 
 .inline{
@@ -627,12 +656,24 @@ video {
   display: grid;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-9{
   height: 2.25rem;
 }
 
 .h-72{
   height: 18rem;
+}
+
+.h-5{
+  height: 1.25rem;
+}
+
+.h-6{
+  height: 1.5rem;
 }
 
 .w-1\/2{
@@ -647,6 +688,14 @@ video {
   width: 100%;
 }
 
+.w-5{
+  width: 1.25rem;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
 .max-w-5xl{
   max-width: 64rem;
 }
@@ -655,8 +704,24 @@ video {
   max-width: 20rem;
 }
 
+.max-w-7xl{
+  max-width: 80rem;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .items-center{
@@ -674,6 +739,15 @@ video {
 .gap-x-12{
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+}
+
+.gap-y-8{
+  row-gap: 2rem;
+}
+
+.gap-x-8{
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 .overflow-hidden{
@@ -716,8 +790,21 @@ video {
   background-color: rgb(8 31 77 / var(--tw-bg-opacity));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .p-7{
   padding: 1.75rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .px-4{
@@ -770,6 +857,36 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-5{
   padding-bottom: 1.25rem;
 }
@@ -804,8 +921,32 @@ video {
   line-height: 2rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .tracking-wider{
@@ -841,6 +982,12 @@ video {
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -915,9 +1062,19 @@ video {
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-purple-900:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 28 135 / var(--tw-bg-opacity));
+}
+
 .hover\:text-sec:hover{
   --tw-text-opacity: 1;
   color: rgb(0 131 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-pri:hover{
+  --tw-text-opacity: 1;
+  color: rgb(8 31 77 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-xl:hover{
@@ -947,4 +1104,156 @@ video {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+@media (min-width: 640px){
+  .sm\:-ml-12{
+    margin-left: -3rem;
+  }
+
+  @media (min-width: 640px){
+    .sm\:sm\:-ml-12{
+      margin-left: -3rem;
+    }
+  }
+
+  .sm\:mt-0{
+    margin-top: 0px;
+  }
+
+  .sm\:flex{
+    display: flex;
+  }
+
+  .sm\:gap-y-12{
+    row-gap: 3rem;
+  }
+
+  .sm\:p-14{
+    padding: 3.5rem;
+  }
+
+  .sm\:py-14{
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .sm\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .md\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .md\:inline-block{
+    display: inline-block;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+
+  .md\:w-1\/2{
+    width: 50%;
+  }
+
+  .md\:w-auto{
+    width: auto;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:items-center{
+    align-items: center;
+  }
+
+  .md\:p-7{
+    padding: 1.75rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:h-72{
+    height: 18rem;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:gap-y-16{
+    row-gap: 4rem;
+  }
+
+  .lg\:gap-x-12{
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+
+  .lg\:py-32{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+@media (min-width: 640px){
+  @media (min-width: 1024px){
+    .sm\:lg\:gap-y-16{
+      row-gap: 4rem;
+    }
+
+    .sm\:lg\:py-32{
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  @media (min-width: 1024px){
+    .md\:lg\:col-span-3{
+      grid-column: span 3 / span 3;
+    }
+
+    .md\:lg\:grid-cols-3{
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
 }

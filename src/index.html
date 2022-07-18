@@ -6,10 +6,49 @@
     <link href="../dist/output.css" rel="stylesheet" />
     <title>Blog Landing Page</title>
   </head>
+
   <body class="font-body">
+    <div class="bg-white shadow-md">
+        <header class="container mx-auto max-w-7xl flex flex-wrap items-center p-6 justify-between">
+            <div class="flex items-center text-sec hover:text-pri cursor-pointer transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="font-semibold text-xl font-title">
+                    CakeNews
+                  </span>
+            </div>
+            <div class="md:hidden block">
+                <button id="menu-open" class="px-3 py-1 rounded bg-sec text-white hover:bg-purple-900 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                      </svg>
+                </button>
+                <button id="menu-close" class="hidden px-3 py-1 rounded bg-sec text-white hover:bg-purple-900 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <nav id="menu-items" class="hidden md:flex md:items-center font-title w-full md:w-auto">
+                <ul class="text-lg">
+                    <li class="my-3 md:my-0 block md:inline-block items-center mr-4">
+                        <a href="" class="tex-pri hover:text-sec transition">Home</a>
+                    </li>
+                    <li class="mb-3 md:mb-0 block md:inline-block items-center mr-4">
+                        <a href="" class="tex-pri hover:text-sec transition">About</a>
+                    </li>
+                    <li class="mb-3 md:mb-0 block md:inline-block items-center mr-4">
+                        <a href="" class="tex-pri hover:text-sec transition">Contact</a>
+                    </li>
+                    <li class="mb-3 md:mb-0 block md:inline-block items-center mr-4">
+                        <a href="" class="tex-pri hover:text-sec transition">Products & Shop</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <div class="container px-4 mx-auto max-w-5xl">
-      <div class="text-center py-14">
-        <h1 class="text-5x font-bold font-title text-sec">
+      <div class="text-center py-10 sm:py-14">
+        <h1 class="text-3xl md:text-5xl font-bold font-title text-sec">
           Latest Blog <br />
           <span class="text-pri"> Post </span>
         </h1>
@@ -25,24 +64,24 @@
         />
       </div>
       <section class="main">
-        <div class="grid grid-cols-3 gap-y-16 gap-x-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 sm:gap-y-12 lg:gap-y-16 gap-x-8 lg:gap-x-12">
           <!-- first row -->
-          <div class="col-span-3">
+          <div class="col-span-1 md:col-span-2 lg:col-span-3">
             <a
-              class="border border-gray-100 flex rounded-3xl overflow-hidden transition duration-300 hover:shadow-lg"
+              class="border border-gray-100 block md:flex rounded-3xl overflow-hidden transition duration-300 hover:shadow-lg"
             >
-              <div class="w-1/2">
+              <div class="md:w-1/2">
                 <img
                   src="https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b2ZmaWNlJTIwZGVza3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                   alt="office desk"
                 />
               </div>
-              <div class="w-1/2 p-7">
+              <div class="md:w-1/2 p-4 md:p-7">
                 <p class="px-3 py-1 bg-our-bg rounded text-sec text-xs inline">
-                  Featured
+                  FEATURED
                 </p>
                 <h2
-                  class="font-bold text-pri text-2xl font-title py-3 transition duration-200 hover:text-sec"
+                  class="font-bold text-pri text-xl md:text-2xl font-title py-3 transition duration-200 hover:text-sec"
                 >
                   Why is it important to follow a Brand Style Guide for your
                   business?
@@ -157,12 +196,12 @@
             </a>
           </div>
           <!-- third row -->
-          <div class="blog-card col-span-2">
+          <div class="blog-card col-span-1 lg:col-span-2">
             <a href="">
               <img
                 src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVza3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                 alt="desk with notebook and keyboard"
-                class="h-72 w-full"
+                class="lg:h-72 w-full"
               />
               <div class="px-4 pb-6">
                 <h2 class="post-title">
@@ -220,8 +259,8 @@
       </section>
       <!-- Subscription and Footer -->
       <section class="subscribe">
-        <div class="text-center mx-auto py-32">
-          <h6 class="text-5x font-bold font-title text-pri">
+        <div class="text-center mx-auto py-12 sm:py-20 lg:py-32">
+          <h6 class="text-3xl md:text-5xl font-bold font-title text-pri">
             Subscribe to Our <br />
             <span class="text-sec"> Blog </span>
           </h6>
@@ -239,16 +278,17 @@
           <input
             type="submit"
             value="Submit"
-            class="-ml-12 px-8 py-2 rounded-3xl bg-sec text-white hover:bg-blue-800 focus:outline-none focus:ring-1"
+            class="mt-4 sm:mt-0 sm:-ml-12 px-8 py-2 rounded-3xl bg-sec text-white hover:bg-blue-800 focus:outline-none focus:ring-1"
           />
         </div>
       </section>
     </div>
     <footer class="bg-pri">
-        <div class="flex text-white font-bold py-8 font-title font extrabold justify-between max-w-5xl mx-auto tracking-wider">
+        <div class="sm:flex text-center px-12 text-white font-bold py-8 font-title font extrabold justify-between max-w-5xl mx-auto tracking-wider">
             <p>TailwindCSS</p>
             <p>All Rights Reserved &copy; 2022</p>
         </div>
     </footer>
+    <script src="../js/script.js"></script>
   </body>
 </html>
